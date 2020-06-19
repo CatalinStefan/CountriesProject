@@ -1,9 +1,9 @@
 package com.devtides.countries.view
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.devtides.countries.R
 import com.devtides.countries.model.Country
 import com.devtides.countries.util.getProgressDrawable

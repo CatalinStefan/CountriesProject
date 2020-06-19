@@ -93,6 +93,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../CountriesProject/app/build.gradle">
           <value>
             <set />
@@ -114,6 +119,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../CountriesProject/app/src/test/java/com/devtides/countriesproject/ListViewModelTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../test/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.kt">
           <value>
             <set />
           </value>

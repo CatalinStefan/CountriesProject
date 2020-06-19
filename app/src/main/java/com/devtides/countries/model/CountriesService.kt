@@ -1,17 +1,19 @@
 package com.devtides.countries.model
 
-import com.devtides.countries.di.DaggerApiComponent
 import io.reactivex.Single
-import javax.inject.Inject
+import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import retrofit2.converter.gson.GsonConverterFactory
 
 class CountriesService {
+    private val BASE_URL = "https://raw.githubusercontent.com"
 
-    @Inject
-    lateinit var api: CountriesApi
-
-    init {
-        DaggerApiComponent.create().inject(this)
-    }
+    val api = Retrofit.Builder()
+        .baseUrl(BASE_URL)
+        .addConverterFactory(GsonConverterFactory.create())
+        .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+        .build()
+        .create(CountriesApi::class.java)
 
     fun getCountries(): Single<List<Country>> {
         return api.getCountries()
